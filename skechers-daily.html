@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skechers Daily Wear | SneakrHub</title>
+    // ...existing head content...
+</head>
+<body>
+    // ...existing nav...
+
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="img1_1.jpg" alt="Skechers Daily Wear Front View">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="img1_1.jpg" alt="Skechers Front View" onclick="updateMainImage(this.src)">
+                <img src="img1_2.jpg" alt="Skechers Side View" onclick="updateMainImage(this.src)">
+                <img src="img1_3.jpg" alt="Skechers Back View" onclick="updateMainImage(this.src)">
+                <img src="img1_4.jpg" alt="Skechers Top View" onclick="updateMainImage(this.src)">
+            </div>
+        </div>
+        <div class="product-info-detail">
+            <h1>Skechers Daily Wear</h1>
+            <div class="price">PKR 2,499.99</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(178 reviews)</span>
+            </div>
+            <div class="description">
+                <h3>Product Description</h3>
+                <p>Experience all-day comfort with Skechers Daily Wear. These versatile sneakers combine memory foam technology with contemporary design, perfect for your active lifestyle.</p>
+            </div>
+            <div class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>Memory Foam cushioning</li>
+                    <li>Breathable mesh fabric</li>
+                    <li>Flexible sole design</li>
+                    <li>Shock absorbing midsole</li>
+                    <li>Easy slip-on design</li>
+                </ul>
+            </div>
+            <div class="size-selection">
+                <h3>Select Size</h3>
+                <div class="size-grid">
+                    <button class="size-btn" data-size="US 7">US 7</button>
+                    <button class="size-btn" data-size="US 8">US 8</button>
+                    <button class="size-btn" data-size="US 9">US 9</button>
+                    <button class="size-btn" data-size="US 10">US 10</button>
+                    <button class="size-btn" data-size="US 11">US 11</button>
+                </div>
+            </div>
+            <div class="color-selection">
+                <h3>Select Color</h3>
+                <div class="color-grid">
+                    <button class="color-btn" data-color="mustard" style="background-color: #ffdb58"></button>
+                    <button class="color-btn" data-color="black" style="background-color: #000000"></button>
+                    <button class="color-btn" data-color="brown" style="background-color: #8b4513"></button>
+                    <button class="color-btn" data-color="blue" style="background-color: #0000ff"></button>
+                </div>
+            </div>
+            <button class="add-to-cart-large" onclick="handleAddToCart(5)">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+            </button>
+        </div>
+    </section>
+
+    // ...existing footer and scripts...
+    <script>
+        // Color and size selection handlers
+        document.querySelectorAll('.color-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.color-btn').forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+            });
+        });
+
+        document.querySelectorAll('.size-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+            });
+        });
+
+        function handleAddToCart(productId) {
+            const selectedColor = document.querySelector('.color-btn.selected')?.dataset.color;
+            const selectedSize = document.querySelector('.size-btn.selected')?.dataset.size;
+            
+            if (!selectedSize || !selectedColor) {
+                alert('Please select both size and color');
+                return;
+            }
+            
+            addToCart(productId);
+        }
+    </script>
+</body>
+</html>

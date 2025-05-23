@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakrHub | Premium Sneaker Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">SneakrHub</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Elevate Your Style</h1>
+            <p>Discover premium sneakers for the modern lifestyle</p>
+            <a href="products.html" class="cta-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Trending Now</h2>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Sneaker 1" class="product-image">
+                <div class="product-info">
+                    <h3>Nike Air Max</h3>
+                    <p class="product-price">$159.99</p>
+                    <a href="product-detail.html?id=1" class="view-product-btn">
+                        <i class="fas fa-eye"></i>
+                        View Product
+                    </a>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for premium sneakers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: sneakrhubco@gmail.com</p>
+                <p>Phone: 0336-0886319</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600,
+            offset: 200,
+            delay: 0,
+            throttleDelay: 50,
+            disableMutationObserver: false
+        });
+        
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

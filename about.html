@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SneakrHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">SneakrHub</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About SneakrHub</h1>
+    </section>
+
+    <section class="about-content">
+        <div class="about-card">
+            <h2>Our Story</h2>
+            <p>SneakrHub was born from a shared love for sneakers and the culture surrounding them. What started as a small passion project between friends quickly grew into a thriving platform for collectors and casual buyers alike. We saw a need for a trusted, community-driven space where people could discover, buy, and celebrate sneakers — and we built SneakrHub to be just that. Today, we continue to grow with our customers, always staying true to our roots: authenticity, style, and the love of the game.</p>
+        </div>
+        <div class="about-card">
+            <h2>Our Mission</h2>
+            <p>At SneakrHub, our mission is to connect sneaker enthusiasts with the freshest and most sought-after kicks on the market. We’re here to make premium sneakers accessible, authentic, and part of your everyday life. Whether you're hunting for limited-edition releases or timeless classics, we aim to deliver a seamless experience built on trust, quality, and passion for sneaker culture.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for premium sneakers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: sneakrhubco@gmail.com</p>
+                <p>Phone: 0336-0886319</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600,
+            offset: 200,
+            delay: 0,
+            throttleDelay: 50
+        });
+        
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

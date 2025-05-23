@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Max | SneakrHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">SneakrHub</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Nike Air Max">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Front view">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Side view">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Back view">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Top view">
+            </div>
+        </div>
+        <div class="product-info-detail">
+            <h1>Nike Air Max</h1>
+            <div class="price">PKR 159.99</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(120 reviews)</span>
+            </div>
+            <div class="description">
+                <h3>Product Description</h3>
+                <p>Experience unmatched comfort and style with the Nike Air Max. Featuring advanced cushioning technology and premium materials, these sneakers are perfect for both athletic performance and casual wear.</p>
+            </div>
+            <div class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>Breathable mesh upper</li>
+                    <li>Air cushioning system</li>
+                    <li>Durable rubber outsole</li>
+                    <li>Premium comfort lining</li>
+                </ul>
+            </div>
+            <div class="size-selection">
+                <h3>Select Size</h3>
+                <div class="size-grid" id="size-buttons">
+                    <button data-size="US 7">US 7</button>
+                    <button data-size="US 8">US 8</button>
+                    <button data-size="US 9">US 9</button>
+                    <button data-size="US 10">US 10</button>
+                    <button data-size="US 11">US 11</button>
+                </div>
+            </div>
+            <div class="color-selection">
+                <h3>Select Color</h3>
+                <div class="color-grid">
+                    <button class="color-btn" data-color="Black" style="background-color: black"></button>
+                    <button class="color-btn" data-color="White" style="background-color: white; border: 1px solid #ddd"></button>
+                    <button class="color-btn" data-color="Red" style="background-color: #ff4d4d"></button>
+                    <button class="color-btn" data-color="Blue" style="background-color: #4d79ff"></button>
+                </div>
+            </div>
+            <button class="add-to-cart-large" onclick="addToCart(1)">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+            </button>
+            <div class="reviews-section">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your premier destination for premium sneakers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: sneakrhubco@gmail.com</p>
+                <p>Phone: 0336-0886319</p>
+                <p>Location: Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600,
+            offset: 200,
+            delay: 0,
+            throttleDelay: 50
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

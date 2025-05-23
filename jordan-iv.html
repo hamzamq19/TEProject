@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan IV Retro High | SneakrHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add your existing nav here -->
+    <section class="product-detail">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="mainImage" src="img1.jpg" alt="Jordan IV Retro High Main View">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="img1.jpg" alt="Jordan IV Front View" onclick="changeImage('img1.jpg')">
+                <img src="img2.jpg" alt="Jordan IV Side View" onclick="changeImage('img2.jpg')">
+                <img src="img3.jpg" alt="Jordan IV Back View" onclick="changeImage('img3.jpg')">
+                <img src="img4.jpg" alt="Jordan IV Top View" onclick="changeImage('img4.jpg')">
+            </div>
+        </div>
+        <div class="product-info-detail">
+            <h1>Jordan IV Retro High</h1>
+            <div class="price">PKR 4,999.99</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(2 reviews)</span>
+            </div>
+            <div class="description">
+                <h3>Product Description</h3>
+                <p>The iconic Jordan IV Retro High returns with premium materials and classic colorways. Featuring the legendary Air cushioning and distinctive side panels, these sneakers pay homage to basketball heritage while delivering modern comfort.</p>
+            </div>
+            <div class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li>Premium leather and suede upper</li>
+                    <li>Visible Air cushioning unit</li>
+                    <li>Classic wing eyelets</li>
+                    <li>Rubber outsole with herringbone pattern</li>
+                    <li>Signature Jumpman branding</li>
+                </ul>
+            </div>
+            <div class="color-selection">
+                <h3>Select Color</h3>
+                <div class="color-grid">
+                    <button class="color-btn" data-color="grey-white" style="background: linear-gradient(45deg, #808080, #ffffff)"></button>
+                    <button class="color-btn" data-color="green-black" style="background: linear-gradient(45deg, #006400, #000000)"></button>
+                    <button class="color-btn" data-color="black-white" style="background: linear-gradient(45deg, #000000, #ffffff)"></button>
+                    <button class="color-btn" data-color="white-mustard" style="background: linear-gradient(45deg, #ffffff, #ffdb58)"></button>
+                </div>
+            </div>
+            <!-- Add your existing size selection here -->
+        </div>
+    </section>
+    <!-- Add your existing footer here -->
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
