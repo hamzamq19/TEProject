@@ -2,7 +2,7 @@ const products = [
     {
         id: 1,
         name: "Nike Air Max",
-        price: 1599.99,
+        price: 3599.99,
         category: "running",
         image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb",
         images: [
@@ -15,7 +15,7 @@ const products = [
     {
         id: 2,
         name: "Adidas Ultraboost",
-        price: 1799.99,
+        price: 2799.99,
         category: "running",
         image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb",
         images:
@@ -29,7 +29,7 @@ const products = [
     {
         id: 3,
         name: "Puma RS-X",
-        price: 1290.99,
+        price: 2290.99,
         category: "casual",
         image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
         images: [
@@ -70,7 +70,7 @@ const products = [
     {
         id: 6,
         name: "Raya Skateboarding",
-        price: 1999.99,
+        price: 2999.99,
         category: "casual",
         image: "img2_1.jpg", // First image in attachments
         images: [
@@ -370,7 +370,7 @@ function renderProducts() {
 const productDetails = {
     1: {
         name: "Nike Air Max",
-        price: 1599.99,
+        price: 3599.99,
         description: "Experience unmatched comfort and style with the Nike Air Max. Featuring advanced cushioning technology and premium materials.",
         features: [
             "Air cushioning system",
@@ -382,7 +382,7 @@ const productDetails = {
     },
     2: {
         name: "Adidas Ultraboost",
-        price: 1799.99,
+        price: 2799.99,
         description: "Revolutionary comfort and energy return with Adidas Ultraboost. Features BOOST technology and Primeknit upper for an adaptive, energized ride.",
         features: [
             "BOOST midsole technology",
@@ -395,7 +395,7 @@ const productDetails = {
     },
     3: {
         name: "Puma RS-X",
-        price: 1299.99,
+        price: 2299.99,
         description: "The Puma RS-X combines retro-inspired design with modern comfort technology. Bold chunky silhouette with premium materials.",
         features: [
             "Running System technology",
@@ -434,7 +434,7 @@ const productDetails = {
     },
     6: {
         name: "Raya Skateboarding",
-        price: 1999.99,
+        price: 2999.99,
         description: "Built for skateboarding enthusiasts, featuring durable design with extra grip and protection for your skating adventures.",
         features: [
             "Enhanced grip sole",
