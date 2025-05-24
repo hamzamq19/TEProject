@@ -42,7 +42,7 @@ const products = [
     {
         id: 4,
         name: "Jordan IV Retro High",
-        price: 4999.99,
+        price: 3499.99,
         category: "sport",
         image: "img1.jpg",
         images: [
@@ -408,7 +408,7 @@ const productDetails = {
     },
     4: {
         name: "Jordan IV Retro High",
-        price: 4999.99,
+        price: 3499.99,
         description: "The iconic Jordan IV Retro High returns with premium materials and classic colorways. A true basketball heritage masterpiece.",
         features: [
             "Premium leather and suede upper",
