@@ -449,24 +449,19 @@ const productDetails = {
 
 const productReviews = {
     4: [
-        { name: "M. Sharif", rating: 5, comment: "Best Jordan IVs I've owned!", date: "2024-01-15" },
-        { name: "Abdullah", rating: 4, comment: "Great quality, runs slightly large", date: "2024-01-10" }
+        
     ],
     5: [
-        { name: "Ali", rating: 5, comment: "Super comfortable for daily use", date: "2024-01-12" },
-        { name: "Huzaifa Shah", rating: 4, comment: "Good value for money", date: "2024-01-08" }
+        
     ],
     6: [
-        { name: "123", rating: 4, comment: "Perfect for skateboarding", date: "2024-01-14" }
+        
     ],
     2: [
-        { name: "Hamza K.", rating: 5, comment: "Best running shoes I've ever owned!", date: "2024-01-18" },
-        { name: "Sarah A.", rating: 5, comment: "Perfect fit and super comfortable", date: "2024-01-16" },
-        { name: "Usman M.", rating: 4, comment: "Great for long runs", date: "2024-01-14" }
+        
     ],
     3: [
-        { name: "Bilal R.", rating: 4, comment: "Stylish and comfortable", date: "2024-01-17" },
-        { name: "Fatima S.", rating: 5, comment: "Love the retro look!", date: "2024-01-15" }
+        
     ]
 };
 
